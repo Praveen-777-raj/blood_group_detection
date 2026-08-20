@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h2>Blood Group Detection</h2>
+        </div>
+    </nav>
+
+    <!-- Result Section -->
+    <section class="upload-section">
+
+        <div class="upload-card">
+
+            <h2>Prediction Result</h2>
+
+            <br>
+
+            <h3>Original Image</h3>
+
+            <img
+                src="{{ url_for('static', filename='uploads/' + image) }}"
+                width="300"
+            >
+
+            <br><br>
+
+            <h3>Processed Image</h3>
+
+            <img
+                src="{{ url_for('static', filename='uploads/processed_image.jpg') }}"
+                width="300"
+            >
+
+            <br><br>
+
+            <h3>{{ prediction }}</h3>
+
+            <p><strong>Confidence:</strong> {{ confidence }}</p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

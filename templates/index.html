@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Group Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <h2>Blood Group Detection</h2>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/upload">Upload</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Blood Group Detection Using Image Processing</h1>
+
+        <p>
+            Upload a blood sample image and detect the blood group
+            using Image Processing and Artificial Intelligence.
+        </p>
+
+        <a href="/upload" class="btn">Get Started</a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Blood Group Detection Project</p>
+    </footer>
+
+</body>
+</html>
